@@ -1,4 +1,73 @@
-# Welcome to your Lovable project
+variantly.ai
+
+AI-powered impact simulation for PMs & Designers
+Ship faster but with greater confidence by weighing in the potential metric impact of your product decisions — before you build.
+
+🚀 Overview
+
+Design and product teams often need to ship fast and faster (oh, hello Ai!) but build features based on intuition, not evidence. variantly.ai helps you validate ideas early by letting you:
+
+Drop in your prototype (Figma, image, or Lovable UI)
+
+Describe your change
+
+Simulate its potential impact on key product metrics (activation, engagement, drop-offs, conversion, etc.)
+
+Compare variants instantly
+
+Share results with stakeholders for alignment
+
+This enables more rigorous, data-aware decision making without needing analysts, experiments, or engineering time.
+
+🎯 Why This Project Exists
+
+Product decisions cost time, money, and engineering resources. Most teams lack the ability to estimate downstream impact until after shipping, leading to:
+
+Costly rework
+
+Slow experimentation cycles
+
+Pressure to ship without validation
+
+Stakeholders relying on gut feel instead of evidence
+
+variantly.ai fills this gap by giving PMs and Designers an early signal of impact—fast, accessible, and interactive.
+
+✨ Key Features
+
+🔮 Impact Simulation Engine
+AI predicts how your proposed UI change may influence user behavior flows and product metrics.
+
+📊 Variant Comparison
+Compare multiple concept versions side-by-side.
+
+🖼 Prototype Input Support
+Works with screenshots, Figma exports, or prebuilt UI in Lovable.
+
+🔗 2-way GitHub Sync
+Your Lovable-generated code is synced between the Lovable editor and this repo.
+
+🧠 Natural Language Inputs
+Just describe the change you’re exploring — the system handles interpretation.
+
+🧵 Shareable Results
+Export impact summaries for your stakeholders.
+
+🧩 Tech Stack
+
+Frontend: Vite + React + TypeScript
+
+UI Components: shadcn/ui
+
+AI Layer: OpenAI GPT models (connected via Lovable’s backend)
+
+State Management: React hooks & Context
+
+Build System: Lovable.dev
+
+Deployment: (Optional) Vercel or Netlify
+
+Repository Sync: Lovable-dev GitHub app (2-way sync)# Welcome to your Lovable project
 
 ## Project info
 
