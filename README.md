@@ -140,3 +140,17 @@ Yes, you can!
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
 Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+
+💡 How It Works (High-Level)
+
+User uploads or selects a UI variant
+
+User describes intended product change
+
+AI model interprets UI + natural language
+
+Simulation engine predicts behavioral shifts
+
+Metrics impact summary is generated
+
+User compares variants and exports insights
