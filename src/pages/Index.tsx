@@ -5,22 +5,17 @@ import { Card } from '@/components/ui/card';
 import { getComparisons } from '@/lib/storage';
 import { useState, useEffect } from 'react';
 import { Comparison } from '@/types/comparison';
-
 const Index = () => {
   const [comparisons, setComparisons] = useState<Comparison[]>([]);
-
   useEffect(() => {
     setComparisons(getComparisons());
   }, []);
-
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-subtle border-b">
         <div className="container mx-auto px-4 py-20 lg:py-32">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
-              <Zap className="w-4 h-4" />
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">AI-Powered Prototype Analysis<Zap className="w-4 h-4" />
               AI-Powered Design Analysis
             </div>
             <h1 className="text-5xl lg:text-7xl font-bold mb-6 tracking-tight">
@@ -30,10 +25,7 @@ const Index = () => {
                 Skip the Guesswork.
               </span>
             </h1>
-            <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              For Product Managers & Designers who don't have time for lengthy A/B tests. 
-              Get AI-powered impact projections in minutes.
-            </p>
+            <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">For Product Managers & UX Designers who ship fast and (not) break things. Get AI-powered impact projections in minutes.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="text-lg gap-2 shadow-lg">
                 <Link to="/compare">
@@ -60,26 +52,23 @@ const Index = () => {
       <section id="features" className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-5xl font-bold mb-4">Why ImpactCompare?</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Make data-informed design decisions without waiting weeks for test results
-            </p>
+            <h2 className="text-3xl lg:text-5xl font-bold mb-4">Why variantly.ai?</h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">Make more confident design decisions - even when you ship fast. 
+How it works?
+variantly.ai uses a hybrid AI stack: vision models to read your UI, heuristic frameworks to score usability, and LLMs to forecast metric impact.</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <Card className="p-8 hover:shadow-xl transition-shadow">
-              <div className="w-14 h-14 rounded-2xl bg-gradient-primary flex items-center justify-center mb-6">
+            <Card className="p-8 hover:shadow-xl transition-shadow bg-violet-100">
+              <div className="w-14 h-14 rounded-2xl bg-gradient-primary flex items-center justify-center mb-6 bg-fuchsia-300">
                 <Zap className="w-7 h-7 text-white" />
               </div>
               <h3 className="text-2xl font-bold mb-3">Lightning Fast</h3>
-              <p className="text-muted-foreground">
-                Get AI-powered insights in minutes, not weeks. Upload your designs and receive 
-                comprehensive analysis instantly.
-              </p>
+              <p className="text-muted-foreground">Get AI-powered insights in minutes, not weeks. Upload design prototypes with context and receive a comprehensive analysis instantly.</p>
             </Card>
 
-            <Card className="p-8 hover:shadow-xl transition-shadow">
-              <div className="w-14 h-14 rounded-2xl bg-accent/20 flex items-center justify-center mb-6">
+            <Card className="p-8 hover:shadow-xl transition-shadow bg-rose-50">
+              <div className="w-14 h-14 rounded-2xl flex items-center justify-center mb-6 bg-orange-300">
                 <TrendingUp className="w-7 h-7 text-accent" />
               </div>
               <h3 className="text-2xl font-bold mb-3">Impact Projections</h3>
@@ -89,8 +78,8 @@ const Index = () => {
               </p>
             </Card>
 
-            <Card className="p-8 hover:shadow-xl transition-shadow">
-              <div className="w-14 h-14 rounded-2xl bg-success/20 flex items-center justify-center mb-6">
+            <Card className="p-8 hover:shadow-xl transition-shadow bg-green-50">
+              <div className="w-14 h-14 rounded-2xl flex items-center justify-center mb-6 bg-violet-300">
                 <Shield className="w-7 h-7 text-success" />
               </div>
               <h3 className="text-2xl font-bold mb-3">Risk-Free Validation</h3>
@@ -104,8 +93,7 @@ const Index = () => {
       </section>
 
       {/* Recent Comparisons */}
-      {comparisons.length > 0 && (
-        <section className="py-20 bg-muted/30">
+      {comparisons.length > 0 && <section className="py-20 bg-muted/30">
           <div className="container mx-auto px-4">
             <div className="flex items-center justify-between mb-8">
               <div>
@@ -121,8 +109,7 @@ const Index = () => {
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {comparisons.slice(0, 6).map((comparison) => (
-                <Card key={comparison.id} className="p-6 hover:shadow-lg transition-shadow cursor-pointer group">
+              {comparisons.slice(0, 6).map(comparison => <Card key={comparison.id} className="p-6 hover:shadow-lg transition-shadow cursor-pointer group">
                   <div className="flex items-start gap-4 mb-4">
                     <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
                       <BarChart3 className="w-6 h-6 text-primary" />
@@ -146,12 +133,10 @@ const Index = () => {
                       <span className="font-medium">{comparison.context.primaryMetric}</span>
                     </div>
                   </div>
-                </Card>
-              ))}
+                </Card>)}
             </div>
           </div>
-        </section>
-      )}
+        </section>}
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-primary text-white">
@@ -163,15 +148,12 @@ const Index = () => {
             Start comparing your design variants and get AI-powered insights today
           </p>
           <Button asChild size="lg" variant="secondary" className="text-lg gap-2 shadow-xl">
-            <Link to="/compare">
-              <Plus className="w-5 h-5" />
+            <Link to="/compare">Let's Go!<Plus className="w-5 h-5" />
               Start Your First Comparison
             </Link>
           </Button>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
