@@ -53,8 +53,9 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-5xl font-bold mb-4">Why variantly.ai?</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">Make more confident design decisions - even when you ship fast.
-How it works?
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-center">Make more confident design decisions - even when you ship fast. 
+
+How it works? 
 variantly.ai uses a hybrid AI stack: vision models to read your UI, heuristic frameworks to score usability, and LLMs to forecast metric impact.</p>
           </div>
 
