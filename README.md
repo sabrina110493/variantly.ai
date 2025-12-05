@@ -3,6 +3,9 @@ variantly.ai
 AI-powered impact simulation for PMs & Designers
 Ship faster but with greater confidence by weighing in the potential metric impact of your product decisions — before you build.
 
+![ezgif-5db2990858d9068a](https://github.com/user-attachments/assets/a2d922fa-ef70-4c18-8fc0-412efe484c3c)
+
+
 🚀 Overview
 
 Design and product teams often need to ship fast and faster (oh, hello Ai!) but build features based on intuition, not evidence. variantly.ai helps you validate ideas early by letting you:
